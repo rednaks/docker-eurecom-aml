@@ -8,5 +8,5 @@ RUN cd /home/aml/ && git clone https://github.com/DistributedSystemsGroup/Algori
 EXPOSE 8888 8888
 #RUN cd /tmp/ && wget https://repo.continuum.io/archive/Anaconda3-4.3.1-Linux-x86_64.sh
 #RUN cd /tmp && bash Anaconda3-4.3.1-Linux-x86_64.sh
-#CMD cd /home/aml && jupyter notebook
-CMD PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS="notebook" pyspark
+CMD cd /home/aml && jupyter notebook
+#PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS="notebook" pyspark
